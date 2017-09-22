@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background2_selected"
+        android:gravity="center_horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="3dp"
+        android:text="Our Locations"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/root_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_front"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:onClick="onCardClick"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="J-37, Muradi Road, Batla House, New Delhi 110025"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/timings"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="9:30AM–8:30PM (Tuesday Closed)"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="8800174336"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_back"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:onClick="onCardClick"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background2_selected"
+                        android:text="Call"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_locate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/button_background2_selected"
+                        android:text="Locate"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/root_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_front2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:onClick="onCardClick2"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="0.5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="A-710, Gali no- 18, Zakir Nagar, New Delhi 110025"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/timings"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="9:00AM–8:00PM (Tuesday Closed)"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/phone"
+                        android:drawablePadding="8dp"
+                        android:paddingTop="5dp"
+                        android:text="9651638895"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_back2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:onClick="onCardClick2"
+                android:visibility="gone"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_call2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background2_selected"
+                        android:text="Call"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_locate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/button_background2_selected"
+                        android:text="Locate"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_faqs"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/button_background_selected"
+        android:text="FAQs"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textview_email_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_faqs"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/email_us"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <org.huzaifa.ikleen.bottommenu.BottomMenu
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

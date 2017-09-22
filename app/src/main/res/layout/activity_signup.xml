@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="org.huzaifa.ikleen.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/default_user_icon_profile"
+            app:civ_border_color="@color/gray"
+            app:civ_border_width="2dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_addPhoto"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pic"
+            android:layout_centerHorizontal="true"
+            android:text="Add a photo"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/btn_addPhoto"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/name"
+            android:nextFocusUp="@id/name"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/number"
+            android:nextFocusUp="@id/number"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/number"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/email"
+            android:nextFocusUp="@id/email"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/password"
+            android:nextFocusUp="@id/password"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/retype_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/prompt_retype_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/retype_password"
+            android:nextFocusUp="@id/retype_password"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/retype_password"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/address"
+            android:nextFocusUp="@id/address"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Address Line 2"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/address2"
+            android:nextFocusUp="@id/address2"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/city"
+            android:text="Delhi"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/address2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:nextFocusLeft="@id/city"
+            android:nextFocusUp="@id/city"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/city"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Pin Code"
+            android:inputType="number"
+            android:maxLines="1"
+            android:nextFocusLeft="@id/pincode"
+            android:nextFocusUp="@id/pincode"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sign_up_button"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pincode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_background_selected"
+            android:text="@string/action_create_account"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

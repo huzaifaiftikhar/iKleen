@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="org.huzaifa.ikleen.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+
+        <TextView
+            android:id="@+id/number"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/email"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/number"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+
+        <TextView
+            android:id="@+id/address"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/address2"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/address"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/city"
+            android:text="Delhi"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/address2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:nextFocusLeft="@id/city"
+            android:nextFocusUp="@id/city"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/pincode"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/city"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_signout"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pincode"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_background_selected"
+            android:text="Sign Out"
+            android:textColor="#ffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

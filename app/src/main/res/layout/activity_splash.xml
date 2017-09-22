@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.huzaifa.ikleen.SplashActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/seamless_washing3" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="271dp"
+        android:layout_height="146dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_banner1" />
+
+    <!--<TextView
+        android:id="@+id/text"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:text="Revolutionize the way" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="you do your laundry" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Give life to your" />
+
+    <TextView
+        android:id="@+id/text4"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="clothes" /> -->
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:text="Developer: Huzaifa Iftikhar, huzaifa3196@gmail.com"/>-->
+
+</RelativeLayout>
