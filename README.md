@@ -3,9 +3,7 @@ iKleen
 
 <p>'iKleen Services' provides you with one of the best launderette service available in India !.</p>
 
-[![Android app on Google Play](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)]()
-
-###Screenshots:
+### Screenshots:
 
 ![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s1.png) 
 ![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s2.png) 
@@ -13,7 +11,7 @@ iKleen
 ![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s4.png)
 
 
-###Credits / Libraries used:
+### Credits / Libraries used:
 
 https://github.com/bumptech/glide
 
