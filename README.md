@@ -5,15 +5,15 @@ iKleen
 
 [![Android app on Google Play](https://developer.android.com/images/brand/en_app_rgb_wo_60.png)]()
 
-Screenshots:
+###Screenshots:
 
-![alt tag](https://drive.google.com/uc?id=0Bx0RLKqn0WI6ckZwS2ZaZFFaY3c) 
-![alt tag](https://drive.google.com/uc?id=0Bx0RLKqn0WI6bU15bHREa2w4a28) 
-![alt tag](https://drive.google.com/uc?id=0Bx0RLKqn0WI6V09EQ3k4ZmxfZW8) 
-![alt tag](https://drive.google.com/uc?id=0Bx0RLKqn0WI6dWJGYk9lVkNoa0k)
+![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s1.png) 
+![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s2.png) 
+![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s3.png) 
+![alt tag](https://raw.githubusercontent.com/huzaifaiftikhar/iKleen/master/Screenshots/s4.png)
 
 
-Credits / Libraries used:
+###Credits / Libraries used:
 
 https://github.com/bumptech/glide
 
