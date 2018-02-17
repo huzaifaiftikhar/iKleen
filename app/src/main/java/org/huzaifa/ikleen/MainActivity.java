@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         bottomMenu.select(FlipCode.value); //default page is home
         /*btnPickup.setOnClickListener(this);*/
 
-        MainFragment mainFragment = new MainFragment();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, mainFragment).commit();
+        HomeFragment homeFragment = new HomeFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, homeFragment).commit();
 
         bottomMenu.setOnItemClickListener(new BottomMenu.OnMenuItemClickListener() {
             @Override
@@ -65,38 +65,25 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         FlipCode.value = 0;
-                        MainFragment mainFragment = new MainFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, mainFragment).commit();
+                        HomeFragment homeFragment = new HomeFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, homeFragment).commit();
                         break;
                     case 1:
-                        /*Intent pickup = new Intent(MainActivity.this, Main2Activity.class);
-                        //pickup.putExtra("location", etLocation.getText().toString());
-                        startActivity(pickup);
-                        break;*/
                         FlipCode.value = 1;
-                        RequestFragment requestFragment = new RequestFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, requestFragment).commit();
+                        MyOrdersFragment myOrdersFragment = new MyOrdersFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, myOrdersFragment).commit();
                         break;
                     case 2:
-                        /*Intent profile = new Intent(MainActivity.this,LoginActivity.class);
-                        startActivity(profile);
-                        break;*/
                         FlipCode.value = 2;
                         ProfileFragment loginFragment = new ProfileFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, loginFragment).commit();
                         break;
                     case 3:
-                        /*Intent prices = new Intent(MainActivity.this,PricesActivity.class);
-                        startActivity(prices);
-                        break;*/
                         FlipCode.value = 3;
                         PricesFragment pricesFragment = new PricesFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, pricesFragment).commit();
                         break;
                     case 4:
-                        /*Intent help = new Intent(MainActivity.this,HelpActivity.class);
-                        startActivity(help);
-                        break;*/
                         FlipCode.value = 4;
                         HelpFragment helpFragment = new HelpFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, helpFragment).commit();

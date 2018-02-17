@@ -15,7 +15,7 @@ import android.widget.EditText;
 import org.huzaifa.ikleen.bottommenu.BottomMenu;
 import org.huzaifa.ikleen.pricesmenu.PricesActivity;
 
-public class MainFragment extends Fragment implements View.OnClickListener {
+public class HomeFragment extends Fragment implements View.OnClickListener {
 
     private EditText etLocation;
 

@@ -37,7 +37,7 @@
             android:gravity="center"
             app:normalImage="@drawable/machine"
             app:selectedImage="@drawable/machine_selected"
-            app:title="Request" />
+            app:title="My Orders" />
 
         <org.huzaifa.ikleen.bottommenu.BottomMenuItem
             android:id="@+id/menu_3"
